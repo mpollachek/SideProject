@@ -4,8 +4,6 @@ const mongoose = require('mongoose')
 const StrikeEmailsModel = require('./models/StrikeEmails');
 const newsletterEmailsModel = require('./models/NewsletterEmails');
 //const { mongoPassword, mongoString } = require('./config');
-const mongoPassword = process.env.mongoPword;
-const mongoString = process.env.mongoChars;
 
 const cors = require("cors");
 
@@ -14,9 +12,19 @@ app.use(cors());
 
 
 //const getInvolvedRouter = require('./routes/getInvolvedRouter')
-const mongoConnection = `mongodb+srv://mpollachek81:${mongoPassword}@awu0.${mongoString}.mongodb.net/allWorkersUnionDB?retryWrites=true&w=majority`;
+// const mongoConnection = `mongodb+srv://mpollachek81:${mongoPassword}@awu0.${mongoString}.mongodb.net/allWorkersUnionDB?retryWrites=true&w=majority`;
+const port = process.env.PORT || 3001;
 
-mongoose.connect(mongoConnection);
+mongoose.connect(mongoDB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false,
+})
+.then(() => {
+  app.listen(port);
+  console.log("Server is Running - booyah");
+});
 
 //app.use('/GetInvolvedEmails', getInvolvedRouter);
 
@@ -48,6 +56,3 @@ app.post("/addEmail", async (req, res) => {
   res.json(r);
 })
 
-app.listen(3001, () => {
-  console.log("Server is Running - booyah");
-});

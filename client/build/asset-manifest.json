@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/www.allworkersunion.com/static/css/main.2c53991a.css",
-    "main.js": "/www.allworkersunion.com/static/js/main.7bf6281b.js",
+    "main.js": "/www.allworkersunion.com/static/js/main.063a599b.js",
     "static/js/787.9e012b2e.chunk.js": "/www.allworkersunion.com/static/js/787.9e012b2e.chunk.js",
     "static/media/workers1.jpg": "/www.allworkersunion.com/static/media/workers1.aa46599aca1a96864387.jpg",
     "static/media/the_hand_that_will_rule_the_world.jpg": "/www.allworkersunion.com/static/media/the_hand_that_will_rule_the_world.f169359cad036d527dc4.jpg",
@@ -18,11 +18,11 @@
     "static/media/EPI_wage_group.png": "/www.allworkersunion.com/static/media/EPI_wage_group.40117b427ac5cc19c912.png",
     "index.html": "/www.allworkersunion.com/index.html",
     "main.2c53991a.css.map": "/www.allworkersunion.com/static/css/main.2c53991a.css.map",
-    "main.7bf6281b.js.map": "/www.allworkersunion.com/static/js/main.7bf6281b.js.map",
+    "main.063a599b.js.map": "/www.allworkersunion.com/static/js/main.063a599b.js.map",
     "787.9e012b2e.chunk.js.map": "/www.allworkersunion.com/static/js/787.9e012b2e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2c53991a.css",
-    "static/js/main.7bf6281b.js"
+    "static/js/main.063a599b.js"
   ]
 }
