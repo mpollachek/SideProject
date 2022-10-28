@@ -3,7 +3,9 @@ const app = express();
 const mongoose = require('mongoose')
 const StrikeEmailsModel = require('./models/StrikeEmails');
 const newsletterEmailsModel = require('./models/NewsletterEmails');
-const { mongoPassword, mongoString } = require('./config');
+//const { mongoPassword, mongoString } = require('./config');
+const mongoPassword = process.env.mongoPword;
+const mongoString = process.env.mongoChars;
 
 const cors = require("cors");
 
